@@ -1,0 +1,64 @@
+<view class='container'>
+  <view><text>{{math_id}}:</text> </view>
+  <view class='content' style='height:300rpx; '>
+   <view class='content-box' style='height:300rpx; '>
+      <view class='content-box-small'>
+        <text>   {{content}}
+        </text>
+      </view>
+   </view>
+  </view>
+
+  <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio" > 
+   
+        <radio value="A"  checked="{{ true_select == 'A' ? 'checked':''}}" />
+       
+           A、
+       </label>
+       <text>{{result_a}}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio" > 
+        <radio value="B" checked="{{ true_select == 'B' ? 'checked':''}}" />
+           B、
+       </label>
+       <text>{{result_b}}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio"> 
+         <radio value="C" checked="{{ true_select == 'C' ? 'checked':''}}"/>
+           C、
+       </label>
+       <text>{{result_c}}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio"> 
+          <radio value="D" checked="{{ true_select == 'D' ? 'checked':''}}"/>
+           D、
+       </label>
+       <text>{{result_d}}</text>
+     </view>
+  </view>
+
+
+  <view class='btn-bottom'>
+    <view class='btn-bottom-a'>您的答案为{{answer}}</view>
+    <view class='btn-bottom-b'>正确答案为{{true_select}}</view>
+    <view class='btn-bottom-btn'> 
+      <button bindtap="nextBtn">下一题</button>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,56 @@
+<view class='container'>
+  <view><text>{{ mathsNum.id }}:</text> </view>
+  <view class='content' style='height:300rpx; '>
+   <view class='content-box' style='height:300rpx; '>
+      <view class='content-box-small'>
+        <text>   {{ mathsNum.content }}  
+       
+        </text>
+      </view>
+   </view>
+  </view>
+
+<radio-group class="radio-group" bindchange="radioChange">
+  <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio" > 
+        <radio value="A"/>
+           A、
+       </label>
+       <text> {{ mathsNum.result_a }}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio" > 
+        <radio value="B"/>
+           B、
+       </label>
+       <text> {{ mathsNum.result_b }}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio"> 
+        <radio  value="C"/>
+           C、
+       </label>
+       <text> {{ mathsNum.result_c }}</text>
+     </view>
+  </view>
+
+   <view class='redio-area'>
+     <view class='redio-area-text'> 
+       <label class="radio"> 
+        <radio  value="D"/>
+           D、
+       </label>
+       <text> {{ mathsNum.result_d }}</text>
+     </view>
+  </view>
+
+</radio-group>  
+
+</view>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><head>
+	    <meta charset="utf-8">
+    <title>现代医院小程序后台</title>
+
+    <meta name="description" content="Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Basic Styles-->
+    <link href="__PUBLIC_ADMIN/style/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC_ADMIN/style/font-awesome.css" rel="stylesheet">
+    <link href="__PUBLIC_ADMIN/style/weather-icons.css" rel="stylesheet">
+
+    <!--网站页面小头标-->
+    <link rel="shortcut icon" href="__PUBLIC_INDEX/__PUBLIC_ADMIN/images/site.ico" type="image/x-icon" />
+    
+    <!--Beyond styles-->
+    <link id="beyond-link" href="__PUBLIC_ADMIN/style/beyond.css" rel="stylesheet" type="text/css">
+    <link href="__PUBLIC_ADMIN/style/demo.css" rel="stylesheet">
+    <link href="__PUBLIC_ADMIN/style/typicons.css" rel="stylesheet">
+    <link href="__PUBLIC_ADMIN/style/animate.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- 头部 -->
+	{include file='common/header'}
+
+	<!-- /头部 -->
+	
+	<div class="main-container container-fluid">
+		<div class="page-container">
+			            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <div class="sidebar-header-wrapper">
+                    <input class="searchinput" type="text">
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+             {include file='common/left'}
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                                        <li>
+                        <a href="#">系统</a>
+                    </li>
+                                        <li class="active">咨询人员管理</li>
+                                        </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+
+                <!-- Page Body -->
+                <div class="page-body">
+                    
+<!--<button type="button" tooltip="添加用户" class="btn btn-sm btn-azure btn-addon" onClick="javascript:window.location.href = '/admin/user/add.html'"> <i class="fa fa-plus"></i> Add-->
+<!--</button>-->
+<div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <div class="widget">
+            <div class="widget-body">
+                <div class="flip-scroll">
+                    <table class="table table-bordered table-hover">
+                        <thead class="">
+                            <tr>
+                                <th class="text-center">ID</th>
+                                <th class="text-center">咨询人员姓名</th>
+                                <th class="text-center" width="10%">年纪</th>
+                                <th class="text-center">电话</th>
+                                <th class="text-center">就诊项目</th>
+                                <th class="text-center" width="10%">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                         {volist name='userInfo' id='user_vo'}
+                          <tr>
+                                <td align="center">{$user_vo.id}</td>
+                                <td align="center">{$user_vo.name}</td>
+                               <td align="center">{$user_vo.age}</td>
+                               <td align="center">{$user_vo.phone}</td>
+                               <td align="center">{$user_vo.project}</td>
+                              
+                                <td align="center">
+                                 
+                                    <a href="#" onClick="warning('确实要删除吗', '{:url('user/del',array('id'=>$user_vo.id))}')" class="btn btn-danger btn-sm shiny">
+                                        <i class="fa fa-trash-o"></i> 删除
+                                    </a>
+                                </td>
+                            </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                	                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+		</div>	
+	</div>
+
+	    <!--Basic Scripts-->
+    <script src="__PUBLIC_ADMIN/js/jquery_002.js"></script>
+    <script src="__PUBLIC_ADMIN/js/bootstrap.js"></script>
+    <script src="__PUBLIC_ADMIN/js/jquery.js"></script>
+    <!--Beyond Scripts-->
+    <script src="__PUBLIC_ADMIN/js/beyond.js"></script>
+    
+
+
+</body></html>

@@ -1,0 +1,19 @@
+<view class='container'>
+   <view class='top'><text>恭喜您答题结束</text></view>
+   <view class='content'>
+      <view> <text>本次测试总共10道题</text> </view>
+      <view> <text>答对{{trueAnswer}}道题</text> </view>
+      <view> <text>答错{{falseAnswer}}道题</text> </view>
+      <view> <text>正确率为{{true_rate}}</text> </view>
+      <view> <text>本次测试得{{true_fen}}分</text> </view>
+   </view>
+
+   <view class='bottom'>
+      <button bindtap="seeMistakes">查看错题</button>
+      <button bindtap="returnBase">返回首页</button>
+
+   </view>
+
+
+
+</view>

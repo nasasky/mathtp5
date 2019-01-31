@@ -1,0 +1,18 @@
+{
+  "pages":[
+      "pages/base/base",
+      "pages/result/result",
+    "pages/mistakes/mistakes",
+    "pages/mistakes1/mistakes1",
+    "pages/test1/test1",
+    "pages/test2/test2",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFC586",
+    "navigationBarTitleText": "小学数学测试",
+    "navigationBarTextStyle":"black"
+  }
+}

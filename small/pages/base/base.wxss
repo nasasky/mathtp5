@@ -1,0 +1,30 @@
+/* pages/base/base.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #FFC586;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.top{
+ padding-top: 200rpx;
+}
+.top image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+
+.top-text{
+  margin-top: 25rpx;
+}
+
+.bottom{
+  margin-top:42rpx;
+}
+.bottom button{
+  width: 300rpx;
+}
+

@@ -1,0 +1,5 @@
+<view class='container'>
+  <view class='top'> <image src='/images/cat.png'></image> </view>
+  <view class='top-text'> <text>数学测试</text> </view>
+  <view class='bottom'><button bindtap="startTest">开始测试</button> </view>
+</view>
